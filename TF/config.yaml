@@ -1,0 +1,53 @@
+Parameters:
+
+  DeploymentPrefix: "Radkowski-LAB"
+  Region: eu-central-1
+
+  AuthTags:
+    Owner: "my_email_is@slightly.different"
+    Security: "Approved"
+  
+  Networking:
+    VPCID: "vpc-0dec78984xxxxxxxx"
+    SUBNETS_IDS: 
+      - 
+        Name: "SubnetA"
+        ID: "subnet-049d72212xxxxxxxx"
+      - 
+        Name: "SubnetB"
+        ID: "subnet-09f5697b3xxxxxxxx"
+
+  Template:
+      KeyName: "Radkowski-Lab-Key"
+      InstanceType: "t4g.nano"
+      AmiSSMLocation: "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-arm64-gp2"
+      UseCodeDeployVPCEndpoints: True
+      SecurityGroups:
+        - 
+          Port: 12340
+          Proto: tcp
+          From: "10.0.0.0/16"
+          Description: "Example 1: TCP port"
+        - 
+          Port: 4321
+          Proto: tcp
+          From: "172.16.0.0/24"
+          Description: "Example 2: TCP port"
+        - 
+          Port: 4343
+          Proto: udp
+          From: "192.168.0.0/25"
+          Description: "Example 3: UDP proto"
+        - 
+          Port: 22
+          Proto: tcp
+          From: "0.0.0.0/0"
+          Description: "Example 4: ssh access"
+
+  Interfaces:
+    - 
+      Name: "eni-0"
+      MapToSubnet: "SubnetA"
+    - 
+      Name: "eni-1"
+      MapToSubnet: "SubnetB"

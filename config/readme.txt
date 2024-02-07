@@ -1,0 +1,1 @@
+zip ../config.zip -r ./*
