@@ -210,304 +210,303 @@ terraform scan results:
 Passed checks: 44, Failed checks: 0, Skipped checks: 15
 
 Check: CKV_AWS_153: "Autoscaling groups should supply tags to launch configurations"
-	PASSED for resource: module.ASG.aws_autoscaling_group.asg
-	File: /asg/asg.tf:19-48
-	Calling File: /main.tf:43-48
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/autoscaling-groups-should-supply-tags-to-launch-configurations
+    PASSED for resource: module.ASG.aws_autoscaling_group.asg
+    File: /asg/asg.tf:19-48
+    Calling File: /main.tf:43-48
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/autoscaling-groups-should-supply-tags-to-launch-configurations
 Check: CKV_AWS_315: "Ensure EC2 Auto Scaling groups use EC2 launch templates"
-	PASSED for resource: module.ASG.aws_autoscaling_group.asg
-	File: /asg/asg.tf:19-48
-	Calling File: /main.tf:43-48
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-315
+    PASSED for resource: module.ASG.aws_autoscaling_group.asg
+    File: /asg/asg.tf:19-48
+    Calling File: /main.tf:43-48
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-315
 Check: CKV_AWS_66: "Ensure that CloudWatch Log Group specifies retention days"
-	PASSED for resource: module.ASG.aws_cloudwatch_log_group.asg-logs
-	File: /asg/asg.tf:69-73
-	Calling File: /main.tf:43-48
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-13
+    PASSED for resource: module.ASG.aws_cloudwatch_log_group.asg-logs
+    File: /asg/asg.tf:69-73
+    Calling File: /main.tf:43-48
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-13
 Check: CKV_AWS_338: "Ensure CloudWatch log groups retains logs for at least 1 year"
-	PASSED for resource: module.ASG.aws_cloudwatch_log_group.asg-logs
-	File: /asg/asg.tf:69-73
-	Calling File: /main.tf:43-48
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338
+    PASSED for resource: module.ASG.aws_cloudwatch_log_group.asg-logs
+    File: /asg/asg.tf:69-73
+    Calling File: /main.tf:43-48
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338
 Check: CKV_AWS_364: "Ensure that AWS Lambda function permissions delegated to AWS services are limited by SourceArn or SourceAccount"
-	PASSED for resource: module.ASG.aws_lambda_permission.allow_cloudwatch
-	File: /asg/asg.tf:75-81
-	Calling File: /main.tf:43-48
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-364
+    PASSED for resource: module.ASG.aws_lambda_permission.allow_cloudwatch
+    File: /asg/asg.tf:75-81
+    Calling File: /main.tf:43-48
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-364
 Check: CKV_AWS_301: "Ensure that AWS Lambda function is not publicly accessible"
-	PASSED for resource: module.ASG.aws_lambda_permission.allow_cloudwatch
-	File: /asg/asg.tf:75-81
-	Calling File: /main.tf:43-48
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-301
+    PASSED for resource: module.ASG.aws_lambda_permission.allow_cloudwatch
+    File: /asg/asg.tf:75-81
+    Calling File: /main.tf:43-48
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-301
 Check: CKV_AWS_93: "Ensure S3 bucket policy does not lockout all but root user. (Prevent lockouts needing root account fixes)"
-	PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	File: /cicd/cicd.tf:29-38
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-24
+    PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    File: /cicd/cicd.tf:29-38
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-24
 Check: CKV_AWS_53: "Ensure S3 bucket has block public ACLS enabled"
-	PASSED for resource: module.CICD.aws_s3_bucket_public_access_block.block_public_access
-	File: /cicd/cicd.tf:48-55
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-19
+    PASSED for resource: module.CICD.aws_s3_bucket_public_access_block.block_public_access
+    File: /cicd/cicd.tf:48-55
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-19
 Check: CKV_AWS_54: "Ensure S3 bucket has block public policy enabled"
-	PASSED for resource: module.CICD.aws_s3_bucket_public_access_block.block_public_access
-	File: /cicd/cicd.tf:48-55
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-20
+    PASSED for resource: module.CICD.aws_s3_bucket_public_access_block.block_public_access
+    File: /cicd/cicd.tf:48-55
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-20
 Check: CKV_AWS_55: "Ensure S3 bucket has ignore public ACLs enabled"
-	PASSED for resource: module.CICD.aws_s3_bucket_public_access_block.block_public_access
-	File: /cicd/cicd.tf:48-55
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-21
+    PASSED for resource: module.CICD.aws_s3_bucket_public_access_block.block_public_access
+    File: /cicd/cicd.tf:48-55
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-21
 Check: CKV_AWS_56: "Ensure S3 bucket has 'restrict_public_buckets' enabled"
-	PASSED for resource: module.CICD.aws_s3_bucket_public_access_block.block_public_access
-	File: /cicd/cicd.tf:48-55
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-22
+    PASSED for resource: module.CICD.aws_s3_bucket_public_access_block.block_public_access
+    File: /cicd/cicd.tf:48-55
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-22
 Check: CKV_AWS_274: "Disallow IAM roles, users, and groups from using the AWS AdministratorAccess policy"
-	PASSED for resource: module.CICD.aws_iam_role.eventbridge-role
-	File: /cicd/cicd.tf:57-88
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
+    PASSED for resource: module.CICD.aws_iam_role.eventbridge-role
+    File: /cicd/cicd.tf:57-88
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
 Check: CKV_AWS_61: "Ensure AWS IAM policy does not allow assume role permission across all services"
-	PASSED for resource: module.CICD.aws_iam_role.eventbridge-role
-	File: /cicd/cicd.tf:57-88
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
+    PASSED for resource: module.CICD.aws_iam_role.eventbridge-role
+    File: /cicd/cicd.tf:57-88
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
 Check: CKV_AWS_60: "Ensure IAM role allows only specific services or principals to assume it"
-	PASSED for resource: module.CICD.aws_iam_role.eventbridge-role
-	File: /cicd/cicd.tf:57-88
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
+    PASSED for resource: module.CICD.aws_iam_role.eventbridge-role
+    File: /cicd/cicd.tf:57-88
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
 Check: CKV_AWS_274: "Disallow IAM roles, users, and groups from using the AWS AdministratorAccess policy"
-	PASSED for resource: module.CICD.aws_iam_role.codedeploy-role
-	File: /cicd/cicd.tf:90-129
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
+    PASSED for resource: module.CICD.aws_iam_role.codedeploy-role
+    File: /cicd/cicd.tf:90-129
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
 Check: CKV_AWS_61: "Ensure AWS IAM policy does not allow assume role permission across all services"
-	PASSED for resource: module.CICD.aws_iam_role.codedeploy-role
-	File: /cicd/cicd.tf:90-129
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
+    PASSED for resource: module.CICD.aws_iam_role.codedeploy-role
+    File: /cicd/cicd.tf:90-129
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
 Check: CKV_AWS_60: "Ensure IAM role allows only specific services or principals to assume it"
-	PASSED for resource: module.CICD.aws_iam_role.codedeploy-role
-	File: /cicd/cicd.tf:90-129
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
+    PASSED for resource: module.CICD.aws_iam_role.codedeploy-role
+    File: /cicd/cicd.tf:90-129
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
 Check: CKV_AWS_274: "Disallow IAM roles, users, and groups from using the AWS AdministratorAccess policy"
-	PASSED for resource: module.CICD.aws_iam_role.codepipeline-role
-	File: /cicd/cicd.tf:131-322
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
+    PASSED for resource: module.CICD.aws_iam_role.codepipeline-role
+    File: /cicd/cicd.tf:131-322
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
 Check: CKV_AWS_61: "Ensure AWS IAM policy does not allow assume role permission across all services"
-	PASSED for resource: module.CICD.aws_iam_role.codepipeline-role
-	File: /cicd/cicd.tf:131-322
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
+    PASSED for resource: module.CICD.aws_iam_role.codepipeline-role
+    File: /cicd/cicd.tf:131-322
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
 Check: CKV_AWS_60: "Ensure IAM role allows only specific services or principals to assume it"
-	PASSED for resource: module.CICD.aws_iam_role.codepipeline-role
-	File: /cicd/cicd.tf:131-322
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
+    PASSED for resource: module.CICD.aws_iam_role.codepipeline-role
+    File: /cicd/cicd.tf:131-322
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
 Check: CKV_AWS_274: "Disallow IAM roles, users, and groups from using the AWS AdministratorAccess policy"
-	PASSED for resource: module.LAMBDA-WEBHOOK.aws_iam_role.lambda-role
-	File: /lambda-webhook/lambda-webhook.tf:9-59
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
+    PASSED for resource: module.LAMBDA-WEBHOOK.aws_iam_role.lambda-role
+    File: /lambda-webhook/lambda-webhook.tf:9-59
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
 Check: CKV_AWS_61: "Ensure AWS IAM policy does not allow assume role permission across all services"
-	PASSED for resource: module.LAMBDA-WEBHOOK.aws_iam_role.lambda-role
-	File: /lambda-webhook/lambda-webhook.tf:9-59
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
+    PASSED for resource: module.LAMBDA-WEBHOOK.aws_iam_role.lambda-role
+    File: /lambda-webhook/lambda-webhook.tf:9-59
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
 Check: CKV_AWS_60: "Ensure IAM role allows only specific services or principals to assume it"
-	PASSED for resource: module.LAMBDA-WEBHOOK.aws_iam_role.lambda-role
-	File: /lambda-webhook/lambda-webhook.tf:9-59
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
+    PASSED for resource: module.LAMBDA-WEBHOOK.aws_iam_role.lambda-role
+    File: /lambda-webhook/lambda-webhook.tf:9-59
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
 Check: CKV_AWS_363: "Ensure Lambda Runtime is not deprecated"
-	PASSED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
-	File: /lambda-webhook/lambda-webhook.tf:145-163
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363
+    PASSED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
+    File: /lambda-webhook/lambda-webhook.tf:145-163
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-363
 Check: CKV_AWS_45: "Ensure no hard-coded secrets exist in lambda environment"
-	PASSED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
-	File: /lambda-webhook/lambda-webhook.tf:145-163
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/secrets-policies/bc-aws-secrets-3
+    PASSED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
+    File: /lambda-webhook/lambda-webhook.tf:145-163
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/secrets-policies/bc-aws-secrets-3
 Check: CKV_AWS_66: "Ensure that CloudWatch Log Group specifies retention days"
-	PASSED for resource: module.LAMBDA-WEBHOOK.aws_cloudwatch_log_group.lambda-logs
-	File: /lambda-webhook/lambda-webhook.tf:165-169
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-13
+    PASSED for resource: module.LAMBDA-WEBHOOK.aws_cloudwatch_log_group.lambda-logs
+    File: /lambda-webhook/lambda-webhook.tf:165-169
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/logging-13
 Check: CKV_AWS_338: "Ensure CloudWatch log groups retains logs for at least 1 year"
-	PASSED for resource: module.LAMBDA-WEBHOOK.aws_cloudwatch_log_group.lambda-logs
-	File: /lambda-webhook/lambda-webhook.tf:165-169
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338
+    PASSED for resource: module.LAMBDA-WEBHOOK.aws_cloudwatch_log_group.lambda-logs
+    File: /lambda-webhook/lambda-webhook.tf:165-169
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-338
 Check: CKV_AWS_274: "Disallow IAM roles, users, and groups from using the AWS AdministratorAccess policy"
-	PASSED for resource: module.LAUNCH-TEMPLATE.aws_iam_role.instance-profile-role
-	File: /launch-template/templates.tf:25-70
-	Calling File: /main.tf:24-33
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
+    PASSED for resource: module.LAUNCH-TEMPLATE.aws_iam_role.instance-profile-role
+    File: /launch-template/templates.tf:25-70
+    Calling File: /main.tf:24-33
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-274
 Check: CKV_AWS_61: "Ensure AWS IAM policy does not allow assume role permission across all services"
-	PASSED for resource: module.LAUNCH-TEMPLATE.aws_iam_role.instance-profile-role
-	File: /launch-template/templates.tf:25-70
-	Calling File: /main.tf:24-33
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
+    PASSED for resource: module.LAUNCH-TEMPLATE.aws_iam_role.instance-profile-role
+    File: /launch-template/templates.tf:25-70
+    Calling File: /main.tf:24-33
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-45
 Check: CKV_AWS_60: "Ensure IAM role allows only specific services or principals to assume it"
-	PASSED for resource: module.LAUNCH-TEMPLATE.aws_iam_role.instance-profile-role
-	File: /launch-template/templates.tf:25-70
-	Calling File: /main.tf:24-33
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
+    PASSED for resource: module.LAUNCH-TEMPLATE.aws_iam_role.instance-profile-role
+    File: /launch-template/templates.tf:25-70
+    Calling File: /main.tf:24-33
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/bc-aws-iam-44
 Check: CKV_AWS_79: "Ensure Instance Metadata Service Version 1 is not enabled"
-	PASSED for resource: module.LAUNCH-TEMPLATE.aws_launch_template.lic-server-template
-	File: /launch-template/templates.tf:79-106
-	Calling File: /main.tf:24-33
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
+    PASSED for resource: module.LAUNCH-TEMPLATE.aws_launch_template.lic-server-template
+    File: /launch-template/templates.tf:79-106
+    Calling File: /main.tf:24-33
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-31
 Check: CKV_AWS_88: "EC2 instance should not have public IP."
-	PASSED for resource: module.LAUNCH-TEMPLATE.aws_launch_template.lic-server-template
-	File: /launch-template/templates.tf:79-106
-	Calling File: /main.tf:24-33
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12
+    PASSED for resource: module.LAUNCH-TEMPLATE.aws_launch_template.lic-server-template
+    File: /launch-template/templates.tf:79-106
+    Calling File: /main.tf:24-33
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-12
 Check: CKV_AWS_46: "Ensure no hard-coded secrets exist in EC2 user data"
-	PASSED for resource: module.LAUNCH-TEMPLATE.aws_launch_template.lic-server-template
-	File: /launch-template/templates.tf:79-106
-	Calling File: /main.tf:24-33
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/secrets-policies/bc-aws-secrets-1
+    PASSED for resource: module.LAUNCH-TEMPLATE.aws_launch_template.lic-server-template
+    File: /launch-template/templates.tf:79-106
+    Calling File: /main.tf:24-33
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/secrets-policies/bc-aws-secrets-1
 Check: CKV_AWS_341: "Ensure Launch template should not have a metadata response hop limit greater than 1"
-	PASSED for resource: module.LAUNCH-TEMPLATE.aws_launch_template.lic-server-template
-	File: /launch-template/templates.tf:79-106
-	Calling File: /main.tf:24-33
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-341
+    PASSED for resource: module.LAUNCH-TEMPLATE.aws_launch_template.lic-server-template
+    File: /launch-template/templates.tf:79-106
+    Calling File: /main.tf:24-33
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-341
 Check: CKV_AWS_260: "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80"
-	PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
-	File: /security-groups/sg.tf:6-38
-	Calling File: /main.tf:7-13
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80
+    PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
+    File: /security-groups/sg.tf:6-38
+    Calling File: /main.tf:7-13
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80
 Check: CKV_AWS_24: "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22"
-	PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
-	File: /security-groups/sg.tf:6-38
-	Calling File: /main.tf:7-13
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security
+    PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
+    File: /security-groups/sg.tf:6-38
+    Calling File: /main.tf:7-13
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security
 Check: CKV_AWS_23: "Ensure every security groups rule has a description"
-	PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
-	File: /security-groups/sg.tf:6-38
-	Calling File: /main.tf:7-13
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
+    PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
+    File: /security-groups/sg.tf:6-38
+    Calling File: /main.tf:7-13
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31
 Check: CKV_AWS_277: "Ensure no security groups allow ingress from 0.0.0.0:0 to port -1"
-	PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
-	File: /security-groups/sg.tf:6-38
-	Calling File: /main.tf:7-13
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-group-does-not-allow-all-traffic-on-all-ports
+    PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
+    File: /security-groups/sg.tf:6-38
+    Calling File: /main.tf:7-13
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-group-does-not-allow-all-traffic-on-all-ports
 Check: CKV_AWS_25: "Ensure no security groups allow ingress from 0.0.0.0:0 to port 3389"
-	PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
-	File: /security-groups/sg.tf:6-38
-	Calling File: /main.tf:7-13
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-2
+    PASSED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
+    File: /security-groups/sg.tf:6-38
+    Calling File: /main.tf:7-13
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-2
 Check: CKV_AWS_20: "S3 Bucket has an ACL defined which allows public READ access."
-	PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-1-acl-read-permissions-everyone
+    PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-1-acl-read-permissions-everyone
 Check: CKV_AWS_57: "S3 Bucket has an ACL defined which allows public WRITE access."
-	PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-2-acl-write-permissions-everyone
+    PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-2-acl-write-permissions-everyone
 Check: CKV2_AWS_6: "Ensure that S3 bucket has a Public Access block"
-	PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached
+    PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached
 Check: CKV_AWS_19: "Ensure all data stored in the S3 bucket is securely encrypted at rest"
-	PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-14-data-encrypted-at-rest
+    PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-14-data-encrypted-at-rest
 Check: CKV_AWS_21: "Ensure all data stored in the S3 bucket have versioning enabled"
-	PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning
+    PASSED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning
 Check: CKV_AWS_158: "Ensure that CloudWatch Log Group is encrypted by KMS"
-	SKIPPED for resource: module.ASG.aws_cloudwatch_log_group.asg-logs
-	Suppress comment: The log group is intentionaly not encrypted using KMS
-	File: /asg/asg.tf:69-73
-	Calling File: /main.tf:43-48
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms
+    SKIPPED for resource: module.ASG.aws_cloudwatch_log_group.asg-logs
+    Suppress comment: The log group is intentionaly not encrypted using KMS
+    File: /asg/asg.tf:69-73
+    Calling File: /main.tf:43-48
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms
 Check: CKV_AWS_219: "Ensure CodePipeline Artifact store is using a KMS CMK"
-	SKIPPED for resource: module.CICD.aws_codepipeline.codepipeline
-	Suppress comment: No need for KMS encryption for Artifact Store
-	File: /cicd/cicd.tf:350-394
-	Calling File: /main.tf:50-55
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-codepipeline-artifactstore-is-not-encrypted-by-key-management-service-kms-using-a-customer-managed-key-cmk
+    SKIPPED for resource: module.CICD.aws_codepipeline.codepipeline
+    Suppress comment: No need for KMS encryption for Artifact Store
+    File: /cicd/cicd.tf:350-394
+    Calling File: /main.tf:50-55
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-codepipeline-artifactstore-is-not-encrypted-by-key-management-service-kms-using-a-customer-managed-key-cmk
 Check: CKV_AWS_50: "X-Ray tracing is enabled for Lambda"
-	SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
-	Suppress comment: No X-Ray tracing needed
-	File: /lambda-webhook/lambda-webhook.tf:145-163
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4
+    SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
+    Suppress comment: No X-Ray tracing needed
+    File: /lambda-webhook/lambda-webhook.tf:145-163
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-serverless-policies/bc-aws-serverless-4
 Check: CKV_AWS_117: "Ensure that AWS Lambda function is configured inside a VPC"
-	SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
-	Suppress comment: Lambda intentionaly deployed outside solution VPC
-	File: /lambda-webhook/lambda-webhook.tf:145-163
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1
+    SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
+    Suppress comment: Lambda intentionaly deployed outside solution VPC
+    File: /lambda-webhook/lambda-webhook.tf:145-163
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1
 Check: CKV_AWS_116: "Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)"
-	SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
-	Suppress comment: Lambda intentionaly deployed without concurent execution limit
-	File: /lambda-webhook/lambda-webhook.tf:145-163
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq
+    SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
+    Suppress comment: Lambda intentionaly deployed without concurent execution limit
+    File: /lambda-webhook/lambda-webhook.tf:145-163
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-a-dead-letter-queue-dlq
 Check: CKV_AWS_272: "Ensure AWS Lambda function is configured to validate code-signing"
-	SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
-	Suppress comment: No code-signing required
-	File: /lambda-webhook/lambda-webhook.tf:145-163
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272
+    SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
+    Suppress comment: No code-signing required
+    File: /lambda-webhook/lambda-webhook.tf:145-163
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-272
 Check: CKV_AWS_115: "Ensure that AWS Lambda function is configured for function-level concurrent execution limit"
-	SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
-	Suppress comment: Lambda intentionaly deployed without concurent execution limit
-	File: /lambda-webhook/lambda-webhook.tf:145-163
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit
+    SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_lambda_function.webhook-lambda-exec
+    Suppress comment: Lambda intentionaly deployed without concurent execution limit
+    File: /lambda-webhook/lambda-webhook.tf:145-163
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-aws-lambda-function-is-configured-for-function-level-concurrent-execution-limit
 Check: CKV_AWS_158: "Ensure that CloudWatch Log Group is encrypted by KMS"
-	SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_cloudwatch_log_group.lambda-logs
-	Suppress comment: The log group is intentionaly not encrypted using KMS
-	File: /lambda-webhook/lambda-webhook.tf:165-169
-	Calling File: /main.tf:35-40
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms
+    SKIPPED for resource: module.LAMBDA-WEBHOOK.aws_cloudwatch_log_group.lambda-logs
+    Suppress comment: The log group is intentionaly not encrypted using KMS
+    File: /lambda-webhook/lambda-webhook.tf:165-169
+    Calling File: /main.tf:35-40
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-cloudwatch-log-group-is-encrypted-by-kms
 Check: CKV_AWS_41: "Ensure no hard coded AWS access key and secret key exists in provider"
-	SKIPPED for resource: aws.default
-	Suppress comment: No credentials hardcoded into provider block
-	File: /provider.tf:11-18
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/secrets-policies/bc-aws-secrets-5
+    SKIPPED for resource: aws.default
+    Suppress comment: No credentials hardcoded into provider block
+    File: /provider.tf:11-18
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/secrets-policies/bc-aws-secrets-5
 Check: CKV2_AWS_5: "Ensure that Security Groups are attached to another resource"
-	SKIPPED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
-	Suppress comment: Security Group is attached to the resource located in separate module
-	File: /security-groups/sg.tf:6-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-security-groups-are-attached-to-ec2-instances-or-elastic-network-interfaces-enis
+    SKIPPED for resource: module.SECURITY-GROUPS.aws_security_group.lic-server-sg
+    Suppress comment: Security Group is attached to the resource located in separate module
+    File: /security-groups/sg.tf:6-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-security-groups-are-attached-to-ec2-instances-or-elastic-network-interfaces-enis
 Check: CKV2_AWS_62: "Ensure S3 buckets should have event notifications enabled"
-	SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	Suppress comment: No event notification needed
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62
+    SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    Suppress comment: No event notification needed
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62
 Check: CKV2_AWS_61: "Ensure that an S3 bucket has a lifecycle configuration"
-	SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	Suppress comment: No lifecycle configuration needed
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-61
+    SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    Suppress comment: No lifecycle configuration needed
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-61
 Check: CKV_AWS_145: "Ensure that S3 buckets are encrypted with KMS by default"
-	SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	Suppress comment: No KMS encryption needed
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default
+    SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    Suppress comment: No KMS encryption needed
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default
 Check: CKV_AWS_144: "Ensure that S3 bucket has cross-region replication enabled"
-	SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	Suppress comment: No cross-region replication needed
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled
+    SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    Suppress comment: No cross-region replication needed
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled
 Check: CKV_AWS_18: "Ensure the S3 bucket has access logging enabled"
-	SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
-	Suppress comment: No access logging needed
-	File: /cicd/cicd.tf:29-38
-	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging
-
+    SKIPPED for resource: module.CICD.aws_s3_bucket.s3-buckets
+    Suppress comment: No access logging needed
+    File: /cicd/cicd.tf:29-38
+    Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging
 ```
 
 ## IaC
